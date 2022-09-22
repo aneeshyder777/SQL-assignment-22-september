@@ -1,0 +1,22 @@
+//creating a database and a table and checking it for different conditions.
+create database Student;
+use Student;
+
+
+create table tblParents(parent_id int,parent_name varchar(50),city varchar(50),age int,annual_income int,occupation varchar(50),Email_id varchar(50));
+
+
+update tblParents set Email_id="not avalible";
+
+
+
+insert into tblParents values(01,"Abdullah","Srinagar",40,500000,"developer");
+insert into tblParents values(02,"Abdul","Delhi",45,600000,"minister");
+insert into tblParents values(03,"Abdu","Bangalore",47,700000,"farmer");
+insert into tblParents values(04,"Abd","Ahmadabad",49,800000,"engineer");
+insert into tblParents values(05,"hakeem","Chennai",50,900000,"doctor");
+insert into tblParents values(06,"hamid","Hydrabad",60,900500,"business");
+
+select * from student.tblparents;
+
+select count(annual_income) from tblParents where annual_income < 600000;
