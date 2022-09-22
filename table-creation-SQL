@@ -20,3 +20,9 @@ insert into tblParents values(06,"hamid","Hydrabad",60,900500,"business");
 select * from student.tblparents;
 
 select count(annual_income) from tblParents where annual_income < 600000;
+
+
+//searching for partilucar cities
+select * from tblparents
+
+WHERE City IN ('Srinagar','Delhi');
